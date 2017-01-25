@@ -1,0 +1,343 @@
+img, .wrapper, header, header video, header #controlbar, header #controlbar #controlbar_container, header #controlbar #progressbar_container, header #controlbar #progressbar_container #progressbar, header #controlbar #control_container, section, footer {
+  width: 100%; }
+
+header video, header #controlbar #control_container {
+  height: 100%; }
+
+.container {
+  max-width: 100%; }
+
+.wrapper {
+  max-width: 900px; }
+
+.wrapper {
+  min-height: 100%; }
+
+header {
+  max-height: 600px; }
+
+.wrapper, .container {
+  margin: 0 auto; }
+
+img {
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: middle; }
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+  * {
+    outline: none;
+    box-sizing: border-box; }
+
+html {
+  font-size: 100%; }
+  html, html a {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); }
+  html, html body {
+    height: 100%; }
+
+body {
+  line-height: 1.6;
+  background-color: #DBDBDB;
+  font-family: "Helvetica Neue", "helvetica", sans-serif; }
+
+/* Background Colors */
+.main-background_color {
+  background: #DBDBDB; }
+
+.main-highlight_color {
+  background: #FD9827; }
+
+.second-background_color {
+  background: #ffffff; }
+
+.controlbar-background_color {
+  background: rgba(0, 0, 0, 0.1); }
+
+.skipslider-background_color {
+  background: rgba(255, 255, 255, 0.1); }
+
+.seekslider-background_color {
+  background: rgba(255, 255, 255, 0.1); }
+
+.main-text_color {
+  color: #4a4a4a; }
+
+.main-text-highlight_color {
+  color: #E39349; }
+
+.second-text_color {
+  color: #666666; }
+
+.third-text_color {
+  color: #ffffff; }
+
+.forth-text_color {
+  color: #f1f1f1; }
+
+.main-border_rule {
+  border-top: 1px solid #e7e7e7; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; }
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2; }
+  h1, h2, h3, h4, h5, h6 {
+    text-rendering: optimizeLegibility; }
+
+ul, li, a {
+  margin: 0; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+.wrapper {
+  background: #ffffff; }
+
+.container {
+  width: 90%; }
+  .container {
+    padding: 20px 0 60px; }
+
+.highlight {
+  color: #E39349; }
+
+header {
+  overflow: hidden;
+  position: relative; }
+header video {
+  margin-bottom: -10px; }
+header #controlbar {
+  height: 38px; }
+  header #controlbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1; }
+  header #controlbar {
+    transform: translateY(29px);
+    transition: transform 300ms ease-in-out; }
+  header #controlbar.show {
+    transform: translateY(0); }
+  header #controlbar {
+    background: rgba(0, 0, 0, 0.1); }
+  @media screen and (min-width: 768px) {
+    header #controlbar {
+      height: 48px;
+      transform: translateY(37px); } }
+  header #controlbar #controlbar_container {
+    padding: 0 5px 0 5px; }
+  header #controlbar #progressbar_container {
+    height: 4px; }
+    header #controlbar #progressbar_container {
+      padding-bottom: 10px; }
+    header #controlbar #progressbar_container {
+      position: relative; }
+    header #controlbar #progressbar_container #progressbar {
+      -moz-appearance: none;
+      -webkit-appearance: none; }
+      header #controlbar #progressbar_container #progressbar {
+        height: 4px; }
+      header #controlbar #progressbar_container #progressbar {
+        position: absolute;
+        top: 0px;
+        z-index: 0; }
+      header #controlbar #progressbar_container #progressbar {
+        background-color: rgba(255, 255, 255, 0.1); }
+      header #controlbar #progressbar_container #progressbar:focus {
+        outline: none; }
+      header #controlbar #progressbar_container #progressbar::-webkit-slider-thumb {
+        width: 0;
+        height: 0; }
+        header #controlbar #progressbar_container #progressbar::-webkit-slider-thumb {
+          -webkit-appearance: none !important; }
+      header #controlbar #progressbar_container #progressbar::-moz-range-thumb {
+        visibility: hidden !important; }
+    header #controlbar #progressbar_container #progress {
+      width: 0;
+      height: 4px; }
+      header #controlbar #progressbar_container #progress {
+        -moz-appearance: none;
+        -webkit-appearance: none; }
+      header #controlbar #progressbar_container #progress {
+        position: absolute;
+        top: 0;
+        z-index: 1; }
+      header #controlbar #progressbar_container #progress {
+        pointer-events: none; }
+      header #controlbar #progressbar_container #progress {
+        background: #FD9827; }
+    header #controlbar #progressbar_container #buffered {
+      height: 4px; }
+      header #controlbar #progressbar_container #buffered {
+        -moz-appearance: none;
+        -webkit-appearance: none; }
+      header #controlbar #progressbar_container #buffered {
+        position: absolute;
+        top: 0;
+        z-index: 1; }
+      header #controlbar #progressbar_container #buffered {
+        pointer-events: none; }
+      header #controlbar #progressbar_container #buffered {
+        background-color: darkgrey;
+        width: 0; }
+  header #controlbar #control_container {
+    padding: 0px 10px 10px 10px; }
+  header #controlbar #control_container {
+    display: flex;
+    align-items: center; }
+  @media screen and (min-width: 768px) {
+    header #controlbar #control_container {
+      padding: 5px 10px 15px 10px; } }
+  header #controlbar .control_elements-left,
+  header #controlbar .control_elements-right {
+    width: 50%; }
+    header #controlbar .control_elements-left,
+    header #controlbar .control_elements-right {
+      display: flex;
+      align-items: center; }
+  header #controlbar .control_elements-left {
+    justify-content: flex-start; }
+  header #controlbar .control_elements-right {
+    justify-content: flex-end; }
+  header #controlbar .control_elements {
+    width: auto; }
+    header #controlbar .control_elements {
+      display: flex;
+      align-items: center; }
+    header #controlbar .control_elements:nth-child(1) {
+      padding-right: 10px; }
+    header #controlbar .control_elements:nth-child(2) {
+      padding-right: 10px; }
+    header #controlbar .control_elements:nth-child(5) {
+      padding-left: 10px; }
+    header #controlbar .control_elements:nth-child(6) {
+      padding-left: 10px; }
+    @media screen and (min-width: 768px) {
+      header #controlbar .control_elements:nth-child(1) {
+        padding-right: 15px; }
+      header #controlbar .control_elements:nth-child(2) {
+        padding-right: 15px; }
+      header #controlbar .control_elements:nth-child(5) {
+        padding-left: 15px; }
+      header #controlbar .control_elements:nth-child(6) {
+        padding-left: 15px; } }
+  header #controlbar button {
+    margin: 0;
+    padding: 3.5px 0 0; }
+    header #controlbar button {
+      outline: none;
+      background: none;
+      cursor: pointer; }
+    header #controlbar button {
+      font-size: 0.5rem; }
+    header #controlbar button {
+      color: #ffffff; }
+  @media screen and (min-width: 768px) {
+    header #controlbar button {
+      padding: 0 0 2px;
+      font-size: 0.875rem; } }
+  header #controlbar .icons {
+    width: 12px;
+    height: 12px; }
+    header #controlbar .icons {
+      cursor: pointer; }
+  @media screen and (min-width: 768px) {
+    header #controlbar .icons {
+      width: 16px;
+      height: 18px; } }
+  header #controlbar .control_elements span {
+    font-size: 0.6rem; }
+    header #controlbar .control_elements span {
+      padding: 4px 0 0; }
+    header #controlbar .control_elements span {
+      cursor: default; }
+    header #controlbar .control_elements span {
+      color: #ffffff; }
+  @media screen and (min-width: 768px) {
+    header #controlbar .control_elements span {
+      padding: 0;
+      font-size: 0.875rem; } }
+  header #controlbar #volumeslider {
+    -moz-appearance: none;
+    -webkit-appearance: none; }
+    header #controlbar #volumeslider {
+      width: 70px;
+      height: 2px; }
+    header #controlbar #volumeslider {
+      margin: 2px 0 0; }
+    header #controlbar #volumeslider {
+      border: 0;
+      border-radius: 0;
+      cursor: pointer; }
+    header #controlbar #volumeslider {
+      background: #ffffff; }
+    header #controlbar #volumeslider::-webkit-slider-thumb {
+      -moz-appearance: none;
+      -webkit-appearance: none; }
+      header #controlbar #volumeslider::-webkit-slider-thumb {
+        width: 8px;
+        height: 8px; }
+      header #controlbar #volumeslider::-webkit-slider-thumb {
+        margin-bottom: -0.5px; }
+      header #controlbar #volumeslider::-webkit-slider-thumb {
+        border: 0;
+        border-radius: 100%;
+        cursor: pointer; }
+      header #controlbar #volumeslider::-webkit-slider-thumb {
+        background: #ffffff; }
+  @media screen and (min-width: 768px) {
+    header #controlbar #volumeslider {
+      width: 120px;
+      height: 3px; }
+      header #controlbar #volumeslider {
+        margin: 0; }
+      header #controlbar #volumeslider::-webkit-slider-thumb {
+        width: 11px;
+        height: 11px; } }
+
+section .mbc_container {
+  max-width: 500px; }
+  section .mbc_container {
+    padding: 40px 0 40px; }
+section h1 {
+  font-size: 0.933rem;
+  margin-bottom: 20px; }
+  @media screen and (min-width: 768px) {
+    section h1 {
+      font-size: 1rem; } }
+section p {
+  font-size: 0.775rem;
+  line-height: 1.9;
+  cursor: default; }
+  section p {
+    color: #666666; }
+  @media screen and (min-width: 768px) {
+    section p {
+      font-size: 0.875rem; } }
+
+footer .mbc_container {
+  padding: 0 0 40px; }
+footer p {
+  font-size: 0.813rem;
+  font-style: italic; }
+  footer p {
+    text-align: center; }
+  footer p {
+    color: #f1f1f1; }
+
+/* Micro Clearfix */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/*# sourceMappingURL=main.css.map */

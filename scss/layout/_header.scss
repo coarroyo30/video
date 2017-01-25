@@ -1,0 +1,276 @@
+
+// Header Rules
+
+header {
+  @extend %full_width_placeholder;
+  @extend %max_height_placeholder;
+  & {
+    overflow: hidden;
+    position: relative;
+  }
+  video {
+    @extend %full_width_placeholder;
+    @extend %full_height_placeholder;
+    & {
+      margin-bottom: -10px;
+    }
+  }
+  #controlbar {
+    height: 38px;
+    @extend %full_width_placeholder;
+    & {
+      position: absolute; bottom: 0; left: 0; z-index: 1;
+    }
+    & {
+      transform: translateY(29px);
+      transition: transform 300ms ease-in-out;
+    }
+    &.show {
+      transform: translateY(0);
+    }
+    & {
+      background: $controlbar-background_color;
+    }
+    @include tablet {
+      height: 48px;
+      transform: translateY(37px);
+    }
+    #controlbar_container {
+      @extend %full_width_placeholder;
+      & {
+        padding: 0 5px 0 5px;
+      }
+    }
+    #progressbar_container {
+      @extend %full_width_placeholder;
+      height: 4px;
+      & {
+        padding-bottom: 10px;
+      }
+      & {
+        position: relative;
+      }
+      #progressbar {
+        @include appearance;
+        & {
+          @extend %full_width_placeholder;
+          height: 4px;
+        }
+        & {
+          position: absolute; top: 0px; z-index: 0;
+        }
+        & {
+          background-color: $seekslider-background_color;
+        }
+        &:focus {
+          outline: none;
+        }
+        &::-webkit-slider-thumb {
+          width: 0; height: 0;
+          & {
+            -webkit-appearance: none !important;
+          }
+        }
+        &::-moz-range-thumb {
+          visibility: hidden !important ;
+        }
+      }
+      #progress {
+        width: 0; height: 4px;
+        & {
+          @include appearance;
+        }
+        & {
+          position: absolute; top: 0; z-index: 1;
+        }
+        & {
+          pointer-events: none;
+        }
+        &{
+          background: $main-highlight_color;
+        } 
+      }
+      #buffered {
+        height: 4px;
+        & {
+          @include appearance;
+        }
+        & {
+          position: absolute; top: 0; z-index: 1;
+        }
+        & {
+          pointer-events: none;
+        }
+        &{
+          background-color: darkgrey;
+          width: 0;
+        } 
+      }
+    }
+    #control_container {
+      @extend %full_width_placeholder;
+      @extend %full_height_placeholder;
+      & {
+        padding: 0px 10px 10px 10px;
+      }
+      & {
+        display: flex;
+        align-items: center;;
+      }
+      & {
+      }
+    }
+    @include tablet {
+      #control_container {
+        padding: 5px 10px 15px 10px;
+      }
+    }
+    .control_elements-left,
+    .control_elements-right {
+      width: 50%;
+      & {
+        display: flex;
+        align-items: center;
+      }
+    }
+    .control_elements-left {
+      justify-content: flex-start;
+    }
+    .control_elements-right {
+      justify-content: flex-end;
+    }
+    .control_elements {
+      width: auto;
+      & {
+        display: flex;
+        align-items: center;
+      }
+      &:nth-child(1) {
+        padding-right: 10px;
+      }
+      &:nth-child(2) {
+        padding-right: 10px;
+      }
+      &:nth-child(3) {
+      }
+      &:nth-child(4) {
+      }
+      &:nth-child(5) {
+        padding-left: 10px;
+      }
+      &:nth-child(6) {
+        padding-left: 10px;
+      }
+      @include tablet {
+        &:nth-child(1) {
+          padding-right: 15px;
+        }
+        &:nth-child(2) {
+          padding-right: 15px;
+        }
+        &:nth-child(3) {
+        }
+        &:nth-child(4) {
+        }
+        &:nth-child(5) {
+          padding-left: 15px;
+        }
+        &:nth-child(6) {
+          padding-left: 15px;
+        }
+      }
+    }
+    button {
+      margin: 0; padding: 3.5px 0 0;
+      & {
+        outline: none;
+        background: none;
+        cursor: pointer;
+      }
+      & {
+        font-size: 0.5rem;
+      }
+      & {
+        color: $third-text_color;
+      }
+    }
+    @include tablet {
+      button {
+        padding: 0 0 2px;
+        font-size: 0.875rem;
+      }
+    }
+    .icons {
+      width: 12px; height: 12px;
+      & {
+        cursor: pointer;
+      }
+    }
+    @include tablet {
+      .icons {
+        width: 16px; height: 18px;
+      }
+    }
+    .control_elements span {
+      font-size: 0.6rem;
+      & {
+        padding: 4px 0 0;
+      }
+      & {
+        cursor: default;
+      }
+      & {
+        color: $third-text_color;
+      }
+    }
+    @include tablet {
+      .control_elements span {
+        padding: 0;
+        font-size: 0.875rem;
+      }
+    }
+    #volumeslider {
+      @include appearance;
+      & {
+        width: 70px; height: 2px;
+      }
+      & {
+        margin: 2px 0 0;
+      }
+      & {
+        border: 0; border-radius: 0;
+        cursor: pointer;
+      }
+      & {
+        background: $second-background_color;
+      }
+      &::-webkit-slider-thumb {
+        @include appearance;
+        & {
+          width: 8px; height: 8px;
+        }
+        & {
+          margin-bottom: -0.5px;
+        }
+        & {
+          border: 0; border-radius: 100%;
+          cursor: pointer;
+        }
+        & {
+          background: $second-background_color;
+        }
+      }
+    }
+    @include tablet {
+      #volumeslider {
+        width: 120px; height: 3px;
+        & {
+          margin: 0;
+        }
+        &::-webkit-slider-thumb {
+          width: 11px; height: 11px;
+        }
+      }
+    }
+  }
+}

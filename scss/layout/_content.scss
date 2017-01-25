@@ -1,0 +1,30 @@
+
+// Content Rules
+
+section {
+  @extend %full_width_placeholder;
+  .mbc_container {
+    max-width: 500px;
+    & {
+      padding: 40px 0 40px;
+    }
+  }
+  & h1 {
+    font-size: 0.933rem;
+    margin-bottom: 20px;
+    @include tablet {
+      font-size: 1rem;
+    }
+  }
+  & p {
+    font-size: 0.775rem;
+    line-height: 1.9;
+    cursor: default;
+    & {
+      color: $second-text_color;
+    }
+    @include tablet {
+      font-size: 0.875rem;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+
+// Variables
+
+$tablet-size: 768px;
+$desktop-size: 1024px;
+
+$font-family: 'Helvetica Neue', 'helvetica', sans-serif;
+
+$controlbar-icon_play: url('../icons/play-icon.png');
+$controlbar-icon_pause: url('../icons/pause-icon.png');
+$controlbar-icon_volume_on: url('../icons/volume-on-icon.png');
+$controlbar-icon_volume_off: url('../icons/volume-off-icon.png');
+$controlbar-icon_fullscreen: url('../icons/fullscreen-icon.png');
+
+$text-shadow-hack: 1px 1px 1px rgba(0,0,0,0.004);
+
+$main-background_color: #DBDBDB;
+$main-highlight_color: #FD9827;
+$second-background_color: #ffffff;
+
+$controlbar-background_color: rgba(0,0,0,0.1);
+$skipslider-background_color: rgba(255,255,255,0.1);
+$seekslider-background_color: rgba(255,255,255,0.1);
+
+$non-background_color: transparent;
+
+$main-text_color: #4a4a4a;
+$main-text-highlight_color: #E39349;
+$second-text_color: #666666;
+$third-text_color: #ffffff;
+$forth-text_color: #f1f1f1;
+
+$main-border_color: #e7e7e7;

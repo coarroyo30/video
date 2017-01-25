@@ -1,0 +1,32 @@
+
+// Global Layout Set-Up
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  & {
+    outline: none;
+    box-sizing: border-box;
+  }
+}
+html {
+  font-size: 100%;
+  &, & a {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: $text-shadow-hack;
+  }
+  &, body {
+    height: 100%;
+  }
+}
+body {
+  line-height: 1.6;
+  background: {
+    color: $main-background_color;
+  }
+  font: {
+    family: $font-family;
+  }
+}

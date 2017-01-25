@@ -1,0 +1,19 @@
+
+// Footer Rules
+
+footer {
+  @extend %full_width_placeholder;
+  .mbc_container {
+    padding: 0 0 40px;
+  }
+  & p {
+    font-size: 0.813rem;
+    font-style: italic;
+    & {
+      text-align: center;
+    }
+    & {
+      color: $forth-text_color;
+    }
+  }
+}

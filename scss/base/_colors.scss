@@ -1,0 +1,46 @@
+
+/* Background Colors */
+
+.main-background_color {
+  background: $main-background_color;
+}
+.main-highlight_color {
+  background: $main-highlight_color;
+}
+.second-background_color {
+  background: $second-background_color;
+}
+
+.controlbar-background_color {
+  background: $controlbar-background_color
+}
+.skipslider-background_color {
+  background: $skipslider-background_color;
+}
+.seekslider-background_color {
+  background: $skipslider-background_color;
+}
+
+// Text Colors
+
+.main-text_color {
+  color: $main-text_color
+}
+.main-text-highlight_color {
+  color: $main-text-highlight_color;
+}
+.second-text_color {
+  color: $second-text_color
+}
+.third-text_color {
+  color: $third-text_color;
+}
+.forth-text_color {
+  color: $forth-text_color;
+}
+
+// Border Colors
+
+.main-border_rule {
+  border-top: 1px solid $main-border_color;
+}

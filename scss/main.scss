@@ -1,0 +1,25 @@
+
+// Import abstracts files from abstracts folder
+
+@import 'abstracts/variables';
+@import 'abstracts/placeholders';
+@import 'abstracts/mixins';
+
+// Import base file from base folder
+
+@import 'base/base';
+@import 'base/colors';
+@import 'base/typo';
+@import 'base/global';
+
+// Import layout files from layout folder
+
+@import 'layout/header';
+@import 'layout/content';
+@import 'layout/footer';
+
+/* Micro Clearfix */
+
+.clearfix {
+  @include clearfix;
+}

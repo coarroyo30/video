@@ -1,0 +1,33 @@
+
+// Global Rules
+
+// Page Wrapper
+
+.wrapper {
+  @extend %full_width_placeholder;
+  @extend %page_max_width_placeholder;
+  @extend %page_min_height_placeholder;
+  & {
+    @extend %center_in_container_placeholder;
+  }
+  & {
+    background: $second-background_color;
+  }
+}
+
+// Page Container
+
+.container {
+  width: 90%;
+  @extend %full_max_width_placeholder;
+  & {
+    @extend %center_in_container_placeholder;
+    padding: 20px 0 60px;
+  }
+}
+
+// Highligh
+
+.highlight {
+  color: $main-text-highlight_color;
+}
