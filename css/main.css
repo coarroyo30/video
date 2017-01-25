@@ -299,7 +299,8 @@ header #controlbar {
       width: 120px;
       height: 3px; }
       header #controlbar #volumeslider {
-        margin: 0; }
+        margin: 0;
+        margin-right: 10px; }
       header #controlbar #volumeslider::-webkit-slider-thumb {
         width: 11px;
         height: 11px; } }
